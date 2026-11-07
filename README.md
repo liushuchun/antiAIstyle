@@ -1,10 +1,10 @@
-# Humanizer-zh
+# antiAIstyle
 
 **去掉中文里的套话，保留你想说的话。**
 
 “在当今快速发展的时代”“这不仅是一次更新，更是效率的飞跃”“让我们拭目以待”——如果一篇稿子删掉这些话，内容一点没少，它们大概就可以删了。
 
-Humanizer-zh 是一个中文编辑 skill，用来处理空话、重复和生硬句式，保留事实、语气和作者立场。给能读取 `SKILL.md` 的 Agent 一份原稿，就可以开始编辑。文章、README、工作邮件、产品介绍和技术文档都可以用。
+antiAIstyle 是一个中文编辑 skill，用来处理空话、重复和生硬句式，保留事实、语气和作者立场。给能读取 `SKILL.md` 的 Agent 一份原稿，就可以开始编辑。文章、README、工作邮件、产品介绍和技术文档都可以用。
 
 ## 先看一段
 
@@ -25,8 +25,8 @@ Humanizer-zh 是一个中文编辑 skill，用来处理空话、重复和生硬�
 克隆仓库：
 
 ```bash
-git clone https://github.com/liushuchun/antiAIstyle.git humanizer-zh
-cd humanizer-zh
+git clone https://github.com/liushuchun/antiAIstyle.git antiAIstyle
+cd antiAIstyle
 ```
 
 在这个目录里打开能读取本地文件的 Agent，发送：
@@ -38,7 +38,7 @@ cd humanizer-zh
 【粘贴原文】
 ```
 
-也可以把 `SKILL.md` 和 `references/` 一起安装到所用 Agent 的本地技能目录，按该工具支持的方式调用 `humanizer-zh`。请保留目录关系，案例文件通过相对路径加载。
+也可以把 `SKILL.md` 和 `references/` 一起安装到所用 Agent 的本地技能目录，按该工具支持的方式调用 `antiAIstyle`。请保留目录关系，案例文件通过相对路径加载。
 
 改写由你使用的 Agent 和模型完成，无需为本仓库单独配置 API Key。
 
@@ -47,14 +47,14 @@ cd humanizer-zh
 轻改一封邮件：
 
 ```text
-按 humanizer-zh 润色下面的邮件。只改别扭和重复的句子，
+按 antiAIstyle 润色下面的邮件。只改别扭和重复的句子，
 保留称呼、感谢和原来的礼貌程度，不改变承诺或时间安排。
 ```
 
 改一篇 README：
 
 ```text
-按 humanizer-zh 修改 README.md。让用途和上手方法更容易找到，
+按 antiAIstyle 修改 README.md。让用途和上手方法更容易找到，
 删去空泛宣传。允许调整标题和段落顺序，检查相关锚点与链接；
 保留命令、路径、功能限制，不补写未经验证的效果。
 ```
@@ -62,7 +62,7 @@ cd humanizer-zh
 保留自己的文风：
 
 ```text
-按 humanizer-zh 润色目标文本，参考样本的句长、用词和叙述节奏。
+按 antiAIstyle 润色目标文本，参考样本的句长、用词和叙述节奏。
 只借鉴表达习惯，不把样本里的经历或观点写进目标文本。
 
 【作者样本】
@@ -88,7 +88,7 @@ cd humanizer-zh
 例如，想把一篇原稿改成四个版本：
 
 ```text
-按 humanizer-zh 把下面的原稿分别改成：
+按 antiAIstyle 把下面的原稿分别改成：
 小红书图文笔记、公众号文章、知乎专栏文章、B站口播稿。
 允许重组正文，保留每版的事实、条件、来源与不确定性。
 沿用作者语气，本次只交付四版正文。
@@ -146,4 +146,4 @@ python3 tests/check_structure.py tests/fixtures/structure.md /path/to/edited-cop
 
 采用 [MIT License](LICENSE)。
 
-这份 README 也按 [Humanizer-zh 的规则](SKILL.md) 润色过：删去重复说明，收紧效果表述，保留示例中的计划与限定。
+这份 README 也按 [antiAIstyle 的规则](SKILL.md) 润色过：删去重复说明，收紧效果表述，保留示例中的计划与限定。
